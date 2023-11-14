@@ -1,159 +1,89 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
+    <title>HTMLの基本</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="青森県平川市蒲田にある野菜の直販店です。道の駅の直販所のように新鮮野菜を安く販売中。弘前市や黒石市近く。">
-    <title>畑で採れた野菜をそのまま販売 青森県平川市蒲田 サンショップ</title>
-    <link rel="stylesheet" href="style.css">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K23TFE1SMH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K23TFE1SMH');
-</script>
-
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: navy; }
+        p { color: #333; }
+        ul, ol { margin-left: 20px; }
+        img { margin-top: 10px; }
+    </style>
 </head>
 <body>
-	<header>
-		<h1>やさいショップ　サン</h1>
-	</header>
-	<main>
+    <h1>HTMLとは?</h1>
+    <p>HTML（HyperText Markup Language）は、ウェブページを作成するための標準的なマークアップ言語です。ウェブページの構造を定義し、テキスト、画像、リンクなどのコンテンツをブラウザに表示させる役割を担います。</p>
 
-<section>
-<h2>自己紹介</h2>
+    <h2>基本的なHTMLページの構造</h2>
+    <p>1. <strong>DOCTYPE宣言</strong>: <code>&lt;!DOCTYPE html&gt;</code> これは文書がHTMLで書かれていることをブラウザに伝えます。</p>
+    <p>2. <strong>htmlタグ</strong>: <code>&lt;html&gt;</code> すべてのHTML要素はこのタグの内部に配置されます。</p>
+    <p>3. <strong>headセクション</strong>: <code>&lt;head&gt;</code> タイトルやスタイルシートへのリンクなど、文書に関するメタ情報が含まれます。</p>
+    <p>&nbsp;&nbsp;&nbsp;• <strong>titleタグ</strong>: <code>&lt;title&gt;</code> タブのタイトルを設定します。</p>
+    <p>4. <strong>bodyセクション</strong>: <code>&lt;body&gt;</code> ページに表示されるコンテンツ（テキスト、画像、リンクなど）を含みます。</p>
 
-<p>
-  こんにちは、私は青森県平川市蒲田にある<span class="highlight">「やさいショップ・サン」</span>です！
-  私の畑では、<span class="emphasis">安くて新鮮で安心・安全な無農薬野菜</span>を栽培しています！
-</p>
+    <h2>基本的なHTMLテンプレート例</h2>
+    <p>以下はHTMLの基本的なテンプレートです：</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;あなたのページのタイトル&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;見出し1&lt;/h1&gt;
+        &lt;p&gt;ここにテキストが入ります。&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
 
-<p class="intro-text">
-  無農薬野菜は、化学合成農薬や化学肥料を使わずに育てた野菜です。そのため、人や環境に害を与える心配が少なく、健康にも良いと言われています。
-</p>
+    <h2>次のStep～HTMLタグの探索～</h2>
+    <h3>１．見出しタグ:</h3>
+    <p>• HTMLでは、<code>&lt;h1&gt;</code> から <code>&lt;h6&gt;</code> までのタグで見出しを作成します。<code>&lt;h1&gt;</code> が最も大きく、<code>&lt;h6&gt;</code> が最も小さい見出しです。</p>
+    <h3>２．異なる種類のテキストスタイル:</h3>
+    <p>• <strong>タグ</strong>でテキストを太字に、<em>タグ</em>でテキストをイタリック（強調）にします。</p>
+    <h3>３．画像の挿入と調整:</h3>
+    <p>• <code>&lt;img&gt;</code> タグで画像を挿入し、width と height 属性でサイズを調整できます。</p>
+    <h3>４．順序なしリスト (<code>&lt;ul&gt;</code>):</h3>
+    <p>• リスト項目は点や丸で始まります。</p>
+    <h3>５. 順序付きリスト (<code>&lt;ol&gt;</code>):</h3>
+    <p>• リスト項目は数字で始まります。</p>
 
-<p class="intro-text">
-  私の畑では、朝早くに収穫し、対面販売しています。そのため、新鮮さが格段に違います。また、野菜が旬の時期に収穫できるので、味や栄養価も高く、とても美味しいです。
-</p>
+    <h2>これらのタグを使って実際に自己紹介文を作成してみましょう。</h2>
+    <p>例文👇</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;自己紹介 &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;こんにちは！私の名前は山田太郎です。&lt;/h1&gt;
 
-  <img src="image/sample.jpg" alt="農園の画像" width="100%" height="auto">
-</section>
+    &lt;p&gt;これは &lt;strong&gt;自己紹介&lt;/strong&gt; のページです。&lt;/p&gt;
 
-<a class="twitter-timeline" data-height="1000" href="https://twitter.com/YasaiShopSan?ref_src=twsrc%5Etfw">Tweets by YasaiShopSan</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>		
-  <br>
+    &lt;h2&gt;趣味&lt;/h2&gt;
+    &lt;p&gt;私の趣味について少し紹介します：&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;読書&lt;/li&gt;
+        &lt;li&gt;映画鑑賞&lt;/li&gt;
+        &lt;li&gt;旅行&lt;/li&gt;
+    &lt;/ul&gt;
 
-<section>
-  <h2>夏の野菜</h2>
-  <p>夏に収穫できる野菜を紹介します。各野菜をクリックすると次のサイトに飛ぶことができます。</p>
+    &lt;h2&gt;好きな食べ物&lt;/h2&gt;
+    &lt;p&gt;私の好きな食べ物は以下の通りです：&lt;/p&gt;
+    &lt;ol&gt;
+        &lt;li&gt;寿司&lt;/li&gt;
+        &lt;li&gt;ラーメン&lt;/li&gt;
+        &lt;li&gt;カレーライス&lt;/li&gt;
+    &lt;/ol&gt;
 
-  <div class="container1">
-    <div class="item1 special-item">
-      <a href="yasai/asparagus.html">
-        <h3>アスパラ</h3>
-        <p>販売中</p>
-        <img src="image/asparagus.jpg" alt="アスパラの画像">
-      </a>
-    </div>
+    &lt;h2&gt;私の写真&lt;/h2&gt;
+    &lt;img src="myphoto.jpg" alt="山田太郎の写真" width="300" height="300"&gt;
 
-    <div class="item1">
-      <a href="yasai/lettuce.html">
-        <h3>レタス</h3>
-        <p>6月10日まで販売中</p>
-        <img src="image/lettuce.jpg" alt="レタスの画像">
-      </a>
-    </div>
-
-    <div class="item1">
-      <a href="yasai/cauliflower.html">
-        <h3>カリフラワー</h3>
-        <p>6月10日まで販売中</p>
-        <img src="image/cauliflower.jpg" alt="カリフラワーの画像">
-      </a>
-    </div>
-
-    <div class="item1">
-      <a href="yasai/new-onion.html">
-        <h3>新玉ねぎ</h3>
-        <p>6月15日まで販売中</p>
-        <img src="image/new-onion.jpg" alt="新玉ねぎの画像">
-      </a>
-    </div>
-
-    <div class="item1">
-      <a href="yasai/garlic.html">
-        <h3>ニンニク</h3>
-        <p>6月15日まで販売中</p>
-        <img src="image/garlic.jpg" alt="ニンニクの画像">
-      </a>
-    </div>
-
-    <div class="item1 not-available">
-      <a href="yasai/tomato.html">
-        <h3>トマト</h3>
-        <p>販売予定</p>
-        <img src="image/tomato.jpg" alt="トマトの画像">
-      </a>
-    </div>
-
-  <div class="item1 not-available">
-  <a href="yasai/cucumber.html">
-    <h3>キュウリ</h3>
-    <p>販売予定</p>
-    <img src="image/cucumber.jpg" alt="キュウリの画像">
-  </a>
-</div>
-
-<div class="item1 not-available">
-  <a href="yasai/eggplant.html">
-    <h3>ナス</h3>
-    <p>販売予定</p>
-    <img src="image/eggplant.jpg" alt="ナスの画像">
-  </a>
-</div>
-
-<div class="item1 not-available">
-  <a href="yasai/cabbage.html">
-    <h3>キャベツ</h3>
-    <p>販売予定</p>
-    <img src="image/cabbage.jpg" alt="キャベツの画像">
-  </a>
-</div>
-
-<div class="item1 not-available">
-  <a href="yasai/broccoli.html">
-    <h3>ブロッコリー</h3>
-    <p>販売予定</p>
-    <img src="image/broccoli.jpg" alt="ブロッコリーの画像">
-  </a>
-</div>
-
-<div class="item1 not-available">
-  <a href="yasai/blueberry.html">
-    <h3>ブルーベリー</h3>
-    <p>販売予定</p>
-    <img src="image/blueberry.jpg" alt="ブルーベリーの画像">
-  </a>
-</div>
-
-</section>
-  	
-  
-		<div id="map-container">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.3867539245257!2d140.52869579999998!3d40.621352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b01425ae288e1%3A0x7b2ebb29ab45988f!2z44CSMDM2LTAyMzIg6Z2S5qOu55yM5bmz5bed5biC6JKy55Sw5LiA5pys5p2-77yS77yU!5e0!3m2!1sja!2sjp!4v1681153945677!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-		  </div>		
-		  <h2>お問い合わせ</h2>
-			<p>ご質問・ご相談がありましたら、お気軽にお問い合わせください。</p>
-			<p>携帯電話：080-3143-3741</p> 
-			<p>営業時間：【午前】6:00～10:00　【午後】15:00～18:00</p>
-			<p>定休日：不定休</p>
-		</section>
-	</main>
-	<footer>
-		<p>&copy;やさいショップ　サン</p>
-	</footer>
+    &lt;p&gt;&lt;em&gt;このページを見てくれてありがとう！&lt;/em&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
 </body>
 </html>
