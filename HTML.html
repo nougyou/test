@@ -1,87 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTMLの基本</title>
-    <meta charset="UTF-8">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1, h2 { color: navy; }
-        p { color: #333; }
-        ul, ol { margin-left: 20px; }
-        img { margin-top: 10px; }
-    </style>
+    <title>HTML の基本</title>
 </head>
 <body>
-    <h1>HTMLとは?</h1>
+    <h1>HTML とは?</h1>
     <p>HTML（HyperText Markup Language）は、ウェブページを作成するための標準的なマークアップ言語です。ウェブページの構造を定義し、テキスト、画像、リンクなどのコンテンツをブラウザに表示させる役割を担います。</p>
+    
+    <h2>基本的な HTML ページの構造</h2>
+    <ol>
+        <li>DOCTYPE 宣言: <code>&lt;!DOCTYPE html&gt;</code> これは文書が HTML で書かれていることをブラウザに伝えます。</li>
+        <li>html タグ: <code>&lt;html&gt;</code> すべての HTML 要素はこのタグの内部に配置されます。</li>
+        <li>head セクション: <code>&lt;head&gt;</code> タイトルやスタイルシートへのリンクなど、文書に関するメタ情報が含まれます。
+            <ul>
+                <li>title タグ: <code>&lt;title&gt;</code> タブのタイトルを設定します。</li>
+            </ul>
+        </li>
+        <li>body セクション: <code>&lt;body&gt;</code> ページに表示されるコンテンツ（テキスト、画像、リンクなど）を含みます。</li>
+    </ol>
 
-    <h2>基本的なHTMLページの構造</h2>
-    <p>1. <strong>DOCTYPE宣言</strong>: <code>&lt;!DOCTYPE html&gt;</code> これは文書がHTMLで書かれていることをブラウザに伝えます。</p>
-    <p>2. <strong>htmlタグ</strong>: <code>&lt;html&gt;</code> すべてのHTML要素はこのタグの内部に配置されます。</p>
-    <p>3. <strong>headセクション</strong>: <code>&lt;head&gt;</code> タイトルやスタイルシートへのリンクなど、文書に関するメタ情報が含まれます。</p>
-    <p>&nbsp;&nbsp;&nbsp;• <strong>titleタグ</strong>: <code>&lt;title&gt;</code> タブのタイトルを設定します。</p>
-    <p>4. <strong>bodyセクション</strong>: <code>&lt;body&gt;</code> ページに表示されるコンテンツ（テキスト、画像、リンクなど）を含みます。</p>
-
-    <h2>基本的なHTMLテンプレート例</h2>
-    <p>以下はHTMLの基本的なテンプレートです：</p>
+    <h2>基本的な HTML テンプレート例</h2>
     <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;あなたのページのタイトル&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;見出し1&lt;/h1&gt;
-        &lt;p&gt;ここにテキストが入ります。&lt;/p&gt;
-    &lt;/body&gt;
+ &lt;head&gt;
+ &lt;title&gt;あなたのページのタイトル&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;h1&gt;見出し 1&lt;/h1&gt;
+ &lt;p&gt;ここにテキストが入ります。&lt;/p&gt;
+ &lt;/body&gt;
 &lt;/html&gt;
     </pre>
 
-    <h2>次のStep～HTMLタグの探索～</h2>
-    <h3>１．見出しタグ:</h3>
-    <p>• HTMLでは、<code>&lt;h1&gt;</code> から <code>&lt;h6&gt;</code> までのタグで見出しを作成します。<code>&lt;h1&gt;</code> が最も大きく、<code>&lt;h6&gt;</code> が最も小さい見出しです。</p>
-    <h3>２．異なる種類のテキストスタイル:</h3>
-    <p>• <strong>タグ</strong>でテキストを太字に、<em>タグ</em>でテキストをイタリック（強調）にします。</p>
-    <h3>３．画像の挿入と調整:</h3>
-    <p>• <code>&lt;img&gt;</code> タグで画像を挿入し、width と height 属性でサイズを調整できます。</p>
-    <h3>４．順序なしリスト (<code>&lt;ul&gt;</code>):</h3>
-    <p>• リスト項目は点や丸で始まります。</p>
-    <h3>５. 順序付きリスト (<code>&lt;ol&gt;</code>):</h3>
-    <p>• リスト項目は数字で始まります。</p>
+    <h2>練習</h2>
+    <ol>
+        <li>テキストファイルを開きます。</li>
+        <li>上記のテンプレートをファイルに入力します。</li>
+        <li>入力し終わったら名前を付けて保存し、<code>index.html</code> という名前で保存します。</li>
+        <li><code>index.html</code> を開くと、あなたのウェブページを表示させることができます。</li>
+    </ol>
 
-    <h2>これらのタグを使って実際に自己紹介文を作成してみましょう。</h2>
-    <p>例文👇</p>
+    <h2>次の Step～HTML タグの探索～</h2>
+
+<h3>１．見出しタグ</h3>
+<p>HTMLでは、<code>&lt;h1&gt;</code> から <code>&lt;h6&gt;</code> までのタグで見出しを作成します。これらのタグは見出しのサイズを異ならせ、ページの構造を明確にします。例えば、<code>&lt;h1&gt;</code> は最も大きい見出しで、<code>&lt;h6&gt;</code> は最も小さい見出しです。</p>
+<pre>
+&lt;h1&gt;これは h1 タグの見出しです&lt;/h1&gt;
+&lt;h2&gt;これは h2 タグの見出しです&lt;/h2&gt;
+&lt;h3&gt;これは h3 タグの見出しです&lt;/h3&gt;
+...
+&lt;h6&gt;これは h6 タグの見出しです&lt;/h6&gt;
+</pre>
+
+<h3>２．異なる種類のテキストスタイル</h3>
+<p><code>&lt;strong&gt;</code> タグと <code>&lt;em&gt;</code> タグは、テキストのスタイルを変更するために使います。例えば、<code>&lt;strong&gt;</code> タグはテキストを太字にし、<code>&lt;em&gt;</code> タグはテキストをイタリック（強調）にします。</p>
+<pre>
+&lt;p&gt;これは &lt;strong&gt;太字&lt;/strong&gt; のテキストです。&lt;/p&gt;
+&lt;p&gt;これは &lt;em&gt;イタリック&lt;/em&gt; のテキストです。&lt;/p&gt;
+</pre>
+
+<h3>３．画像の挿入と調整</h3>
+<p><code>&lt;img&gt;</code> タグを使って画像をウェブページに挿入します。主要な属性には、画像の場所を指定する <code>src</code>、代替テキストを提供する <code>alt</code>、そして画像のサイズを調整する <code>width</code> と <code>height</code> があります。</p>
+
+<h4>基本的な使用法</h4>
+<pre>
+&lt;img src="path/to/image.jpg" alt="画像の説明" width="500" height="300"&gt;
+</pre>
+
+<p>この例では、「path/to/image.jpg」の場所にある画像を挿入し、幅500ピクセル、高さ300ピクセルで表示します。画像が読み込まれない場合には「画像の説明」というテキストが表示されます。</p>
+
+<p><strong>ヒント:</strong> <code>alt</code> 属性は、画像が表示されない場合やアクセシビリティのために重要です。また、画像のサイズは、ページの読み込み速度に影響するため、適切なサイズを選ぶことが大切です。</p>
+
+<h3>４．順序なしリスト (&lt;ul&gt;)</h3>
+<p>順序なしリストは、点や丸で始まるリスト項目を作成するのに使用します。各リスト項目は <code>&lt;li&gt;</code>（List Item）タグで囲みます。</p>
+<pre>
+&lt;ul&gt;
+    &lt;li&gt;アイテム1&lt;/li&gt;
+    &lt;li&gt;アイテム2&lt;/li&gt;
+    &lt;li&gt;アイテム3&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h3>５. 順序付きリスト (&lt;ol&gt;)</h3>
+<p>順序付きリストでは、リスト項目が数字で始まります。順序なしリストと同様に、各項目は <code>&lt;li&gt;</code> タグで囲みます。</p>
+<pre>
+&lt;ol&gt;
+    &lt;li&gt;最初のアイテム&lt;/li&gt;
+    &lt;li&gt;次のアイテム&lt;/li&gt;
+    &lt;li&gt;3番目のアイテム&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+
+    <!-- 続きの内容も同様に追加していく -->
+    <!-- 異なる種類のテキストスタイル、画像の挿入と調整、順序なしリスト、順序付きリストの説明を追加 -->
+
+    <h2>自己紹介文の例</h2>
     <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;自己紹介 &lt;/title&gt;
+ &lt;title&gt;自己紹介 &lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;h1&gt;こんにちは！私の名前は山田太郎です。&lt;/h1&gt;
-
-    &lt;p&gt;これは &lt;strong&gt;自己紹介&lt;/strong&gt; のページです。&lt;/p&gt;
-
-    &lt;h2&gt;趣味&lt;/h2&gt;
-    &lt;p&gt;私の趣味について少し紹介します：&lt;/p&gt;
-    &lt;ul&gt;
-        &lt;li&gt;読書&lt;/li&gt;
-        &lt;li&gt;映画鑑賞&lt;/li&gt;
-        &lt;li&gt;旅行&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;h2&gt;好きな食べ物&lt;/h2&gt;
-    &lt;p&gt;私の好きな食べ物は以下の通りです：&lt;/p&gt;
-    &lt;ol&gt;
-        &lt;li&gt;寿司&lt;/li&gt;
-        &lt;li&gt;ラーメン&lt;/li&gt;
-        &lt;li&gt;カレーライス&lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;h2&gt;私の写真&lt;/h2&gt;
-    &lt;img src="myphoto.jpg" alt="山田太郎の写真" width="300" height="300"&gt;
-
-    &lt;p&gt;&lt;em&gt;このページを見てくれてありがとう！&lt;/em&gt;&lt;/p&gt;
+ &lt;h1&gt;こんにちは！私の名前は奈良太陽です。&lt;/h1&gt;
+ 
+ &lt;p&gt;これは &lt;strong&gt;自己紹介&lt;/strong&gt; のページです。&lt;/p&gt;
+ 
+ &lt;h2&gt;趣味&lt;/h2&gt;
+ &lt;p&gt;私の趣味について少し紹介します：&lt;/p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;読書&lt;/li&gt;
+ &lt;li&gt;映画鑑賞&lt;/li&gt;
+ &lt;li&gt;旅行&lt;/li&gt;
+ &lt;/ul&gt;
+ 
+ &lt;h2&gt;好きな食べ物&lt;/h2&gt;
+ &lt;p&gt;私の好きな食べ物は以下の通りです：&lt;/p&gt;
+ &lt;ol&gt;
+ &lt;li&gt;寿司&lt;/li&gt;
+ &lt;li&gt;ラーメン&lt;/li&gt;
+ &lt;li&gt;カレーライス&lt;/li&gt;
+ &lt;/ol&gt;
+ 
+ &lt;h2&gt;私の写真&lt;/h2&gt;
+ &lt;img src="myphoto.jpg" alt="奈良太陽の写真" width="300" height="300"&gt;
+ 
+ &lt;p&gt;&lt;em&gt;このページを見てくれてありがとう！&lt;/em&gt;&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
     </pre>
